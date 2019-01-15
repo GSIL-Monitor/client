@@ -1,0 +1,96 @@
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px 60px 60px;
+
+    .navBack {
+        font-size: 16px;
+        color: #3c4156;
+        flex: 0 0 auto;
+        width: 100px;
+    }
+
+    .navBack:hover {
+        color: #589aff;
+    }
+
+    .formWrapper {
+        background: white;
+        // height: 100%;
+        margin: 30px 0 0 0;
+        padding: 40px 0 0 0;
+        flex: 1 1 auto;
+    }
+
+    :global .ant-calendar-picker-input {
+        width: 400px;
+    }
+
+    :global {
+        .ant-form-item-required:before {
+            display: none;
+        }
+    
+        .ant-form-item-label label {
+            color: #3c4156;
+            font-size: 14px;
+        }
+        
+        .ant-input {
+            height: 34px;
+            border-radius: 2px;
+            font-size: 12px;
+            color: #3c4156;
+        }
+    
+        .ant-input:focus {
+            border: 1px #dce1e6 solid;
+            border-left: 2px #589aff solid;
+            outline: 0;
+            box-shadow: 0 4px 10px 1px rgba(97, 159, 255, 0.2);
+            border-right-width: 1px !important;
+        }
+    
+        .ant-select-selection--single {
+            height: 34px;
+        }
+    
+        .ant-select-selection {
+            border-radius: 2px;
+        }
+    
+        .ant-select-selection__rendered {
+            line-height: 34px;
+        }
+    
+        .ant-select-selection-selected-value {
+            font-size: 12px;
+            color: #3c4156;
+        }
+    
+        .ant-select-selection__placeholder, .ant-select-search__field__placeholder {
+            font-size: 12px;
+            color: #c7c7c7;
+        }
+    
+        .ant-btn-primary {
+            top: 8px;
+            color: #fff;
+            background-color: #589aff;
+            border-color: #589aff;
+            border-radius: 2px;
+            width: 120px;
+            height: 34px;
+            font-size: 14px;
+        }
+
+        .ant-btn-primary:first-child {
+            background-color: white;
+            border-color: #589aff;
+            color: #589aff;
+            margin-right: 40px;
+        }
+    }
+}
+

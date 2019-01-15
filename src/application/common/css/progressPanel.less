@@ -1,0 +1,104 @@
+.progressPanel {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 850px;;
+    height: 50px;
+    // border: 1px solid #f00;
+    font-size: 14px;
+    background-color: #fff;
+
+    .panelTop{
+
+      span{
+          display: inline-block;
+      }
+
+      :global .anticon{
+        display: inline-block;
+        margin: 6px 10px 0 30px;
+        color: #589aff;
+        font-size: 16px;
+      }
+      
+      .percent {
+          float: right;
+          padding-right: 30px;
+      }
+    }
+
+    :global .ant-progress-inner{
+        background-color: rgba(98, 139, 222,.2);
+        div.ant-progress-bg{
+            height: 2px !important;
+            background-color: #589aff;
+        }
+        
+        
+    }
+
+    :global  .ant-progress-text {
+        position: absolute;
+        top: -20px;
+        right: 30px;
+        color: #3c4156;
+        font-size: 14px;
+    }
+}
+
+// :global
+// 上传结束后的结果显示面板 
+.progressResultPanel {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 850px;;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    background-color: #fff;
+
+    span{
+        display: inline-block;
+    }
+    .leftPanel {
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        :global .anticon{
+            display: inline-block;
+            margin: 0 10px 0 30px;
+            font-size: 14px;
+            svg{
+                color: #fff;
+                background-color: #76cc37;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .rightPanel{
+        float: right;
+        margin-right: 10px;
+
+        :global .anticon{
+            display: inline-block;
+            margin-right: 10px;
+            color: #d6ad08;
+            // background-color: #ffcc03;
+            font-size: 14px;
+        }
+        
+
+        :global .ant-btn{
+            margin-left: 20px;
+            margin-right: 10px;
+            padding: auto 10px;
+        }
+    }
+
+     
+
+}

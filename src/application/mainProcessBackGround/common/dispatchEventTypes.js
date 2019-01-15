@@ -1,0 +1,8 @@
+const LOGIN_SUCCEED = 'LOGIN_SUCCEED';//登录成功
+const LANGUAGE_CHANGE = 'LANGUAGE_CHANGE';//语言修改
+
+
+module.exports = {
+    LOGIN_SUCCEED,
+    LANGUAGE_CHANGE
+}

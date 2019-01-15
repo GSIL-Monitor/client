@@ -1,0 +1,125 @@
+
+.detailPanel {
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    width: 720px;
+    height: 444px;
+    padding: 0 30px;
+    // border: 1px solid #f00;
+    // overflow: hidden;
+    background-color: #fff;
+
+    .hide{
+        font-size: 14px;
+        position: absolute;
+        right:10px;
+        top: 10px;
+
+        :global .anticon-minus{
+            margin-right:6px;
+        }
+
+    }
+
+    .title{
+        height: 66px;
+        text-align: center;
+        line-height: 66px;
+        font-weight: 600;
+    }
+    :global .ant-btn{
+        box-sizing: border-box;
+        width: 90px;
+        height: 26px;
+        font-size: 12px;
+        padding: 3px 10px;
+        margin-bottom: 10px;
+        background-color: #589aff;
+
+        span{
+            color: #fff;
+        }
+    }
+
+    :global .ant-table-content{
+        .ant-table-thead{
+            tr{
+                height: 42px;
+                font-size: 12px;
+                th{
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                }
+                th:nth-of-type(2){
+                   width: 320px
+                }
+            }
+        }
+        .ant-table-body{
+            tr{
+                height: 42px;
+                font-size: 12px;
+                line-height: 42px;
+                td{
+
+                    &:nth-of-type(2){
+                        width: 320px
+                    }
+
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    font-size: 12px;
+
+                    // 文字一行显示
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+
+                    .iconfont {
+                        font-size: 14px;
+                        margin-right: 10px;
+
+                        svg#icon-jinggao1{
+                            color: #d61818;
+                        }
+                    }
+
+                    .anticon-reload {
+                        font-size: 12px;
+                        float: left;
+                        margin-right:4px;
+                        line-height: 42px;
+                        color: #589aff;
+                    }
+                    .reload {
+                        cursor: pointer;
+                        background-color: rgba(0,0,0.2);
+                    }
+                }
+            }
+        }
+    }
+
+    :global .ant-table-pagination.ant-pagination{
+         margin: 18px 0 ;
+    }
+
+}
+// 修复按钮抖动的问题
+[ant-click-animating-without-extra-node]:after {
+	animation: 0s !important;
+}
+
+#root .icon #icon-mp3{
+    font-size: 16px;
+}
+
+:global #root .icon{
+    color: #d61818;
+}
+
+

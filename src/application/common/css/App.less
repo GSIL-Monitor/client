@@ -1,0 +1,174 @@
+:global #root{
+  height: 100%;
+  font-family: PingFangSC-Regular, sans-serif;
+  color:#3c4156;
+  font-size: 14px;
+  .icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+}
+
+.container {
+  height: 100%;
+  :global .ant-layout-header {
+    position: relative;
+    z-index: 1;
+    padding:0px 0px;
+    background-color: #fff;
+    height: 66px;
+    line-height: 66px;
+    box-shadow: 0 2px 4px rgba(98, 139, 222, 0.2); 
+    flex: 0 0 auto;
+  }
+
+  :global .ant-layout-content {
+    height: calc(100% - 66px);
+  }
+
+  .logo {
+    width: 324px;
+    height: 24px;  
+    margin: 21px 0px 0px 60px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+    float: left;
+  }
+  .userIcon {
+    float: right;
+    margin-right: 60px;
+    :global .ant-avatar {
+      width:44px;
+      height:42px;
+      border: 1px solid #589aff;
+      border-radius: 50%;
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  .operationArea {
+    height: 60px;
+    flex: 0 0 auto;
+    .createBtn {
+      color: white;
+      background-color: #589aff;
+      border-radius: 15px;
+      left: 60px;
+      top: 30px;
+      width: 100px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .searchBar {
+      position: relative;
+      float: right;
+      margin-right: 60px;
+      width:300px;
+      height:30px; 
+      top: 30px;
+      line-height: 30px;
+      input {
+        position: absolute;
+        outline: none;
+        width:300px;
+        height:30px;
+        border: 1px solid #d4d9f2;
+        border-radius: 15px;
+        padding-left: 30px;
+        font-size: 14px;
+        color:rgba(60,65,86,.8);
+      }
+      :global .anticon-search {
+        position: absolute;
+        left:10px;
+        font-size: 16px;
+        color:#bec3db;
+        top:50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  
+
+ :global .ant-layout-sider {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 2px 0px 4px rgba(98, 139, 222, 0.2);
+    .ant-menu-inline {
+      border: none;
+    }
+    .ant-menu-item {
+      height:50px;
+      line-height: 50px;
+      margin: 0px;
+      padding-left: 62px !important;
+      .iconfont {
+        margin-right: 12px;
+        font-size: 18px;
+        color:#3c4156;
+      }
+    }
+    .ant-menu-item-selected::after{
+      border-right: none;
+    }
+    .ant-menu-item-selected {
+      background-color: #589aff;
+      color:#fff;
+      .anticon ,.iconfont  {
+        color:#fff;
+      }
+    }
+    .ant-menu-item-selected::after {
+      content: '';
+      border-right: none;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-left-color: #fff;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      right:20px;
+    }  
+  }
+
+  .logout {
+    // position: absolute;
+    float: right;
+    box-sizing: border-box;
+    width:100px;
+    height:28px;
+    // border: 1px solid #589aff;
+    // color:#589aff;
+    text-align: center;
+    line-height: 28px;
+    // border-radius: 14px;
+    // bottom:30px;
+    margin-top: 19px;
+    // transform: translateY(-50%);
+    font-size: 12px;
+    cursor: pointer;
+    :global .anticon-poweroff {
+      margin-right: 8px;
+    }
+  }
+
+  .projectList {
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 0px 60px 30px 60px;
+    height: calc(100% - 90px);
+    overflow: scroll;
+  }
+
+}
+
+
+
+
+
